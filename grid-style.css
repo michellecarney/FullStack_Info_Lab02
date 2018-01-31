@@ -48,11 +48,14 @@ table {
 
 body {
 	font-size: 18px;
+	font-family: arial;
+	background-color: black;
+	color: white;
 }
 
 header, footer {
 	width: 100%;
-	background: #4d94ff;
+	background: black;
 	color: #ffffff;
 	box-sizing: border-box;
 	height: 70px;
@@ -74,17 +77,22 @@ footer {
 }
 
 nav {
-	width: 50%;
+	width: 100%;
 }
 
 img {
 	max-width: 100%;
 	max-height: 100%;
 	border: 1px solid #adadad;
+	display: inline-block;
 }
 
 h2 {
 	font-size: 1.5em;
+}
+
+#site-title{
+	color: red;
 }
 
 h3 {
@@ -104,16 +112,18 @@ a {
 }
 
 .nav-button {
-	color: #ffffff;
-	display: inline-block;
+	color: #fff;
+	display: inline;
 	background: none;
 	height: 100%;
 	width: 150px;
-	margin-left: -5px;
+	margin-left: 15px;
 }
 
 .nav-button:hover {
 	background: #80b3ff;
+	color: #fff;
+	font-weight: bold;
 }
 
 a.nav-button:visited {
@@ -124,11 +134,11 @@ a.nav-button:visited {
 /*START HERE*/
 
 #critically-acclaimed-container {
-
+	width: 90%;
 }
 
 #trending-now-container {
-
+	width: 90%;
 }
 
 #adventure-and-actoin-container{
@@ -140,9 +150,12 @@ a.nav-button:visited {
 }
 
 .other-news-item {
-
+	display: inline-block;
+	width: 24%;
 }
 
 .other-news-item img {
-
+	object-fit: contain;
+	height: 200px;
+	width: 100%;
 }
